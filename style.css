@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root{
+    --colorMain: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --colorHr: hsl(30, 18%, 87%);
+    --colorParagraph: hsl(30, 10%, 34%);
+    --colorSpan: hsl(24, 5%, 18%);
+    --colorTitles: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --colorBackground: hsl(29, 53%, 90%);
+    --colorBackground2: hsl(330, 100%, 98%);
+}
+
+hr{
+    background-color: var(--colorHr);
+}
+
+body{
+    background-color: var(--colorBackground);
+    height: auto;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 50px;
+}
+
+main{
+    background-color: var(--colorMain);
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    padding: 35px;
+}
+.ingredients, .instructions{
+    border-bottom: 2px solid var(--colorHr);
+}
+
+section{
+    p,li{
+        padding-right: 20px;
+    }
+    h1, h2{
+        font-family: "Young Serif";
+        font-weight: normal;
+    }
+    p, span,h3,li{
+        font-family:"Outfit" ;
+        font-size: 16px;
+        color: var(--colorParagraph);
+    }
+    h2,h3{
+        color: var(--colorTitles);
+    }
+    ul, ol{
+        margin-inline-start: -13px;
+    }
+    li{
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+    li::marker{
+        color: var(--colorTitles);
+        font-weight: 800;
+    }
+    span{
+        font-weight: 800;
+        color: var(--colorSpan);
+    }
+}
+
+.recipe{
+    .recipe-img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .recipe-preparation-time{
+        background-color: var(--colorBackground2);
+        padding: 8px 15px;
+        border-radius: 8px;
+    }
+}
+
+.nutrition-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-bottom: 5px;
+    font-weight: 500;
+    text-align: center;
+    span{
+        color: var(--colorTitles);
+        text-align: start;
+    }
+}
+
+.nutrition-table:not(:last-child){
+    border-bottom: 2px solid var(--colorHr);
+}
