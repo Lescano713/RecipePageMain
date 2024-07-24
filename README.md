@@ -41,32 +41,50 @@
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- desktop-first workflow
-
+- mobile-first workflow
 
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+<p>Use of classes to separate the content and recycle them when it's necessary, making the structure cleaner and readeable.This approach not only improves code maintainability but also allows for easier updates and scalability.</p>
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="recipe-preparation-time">
+  <h3>Preparation time</h3>
+  <ul class="preparation-time-list">
+    <li><span class="span-bold">Total:</span> Approximately 10 minutes</li>
+    <li><span class="span-bold">Preparation:</span> 5 minutes</li>
+    <li><span class="span-bold">Cooking:</span>: 5 minutes</li>
+  </ul>
+</div>
+<div class="nutrition-table">
+  <p>Carbs</p>
+  <span class="grams-table">0g</span>
+</div>
+<div class="nutrition-table">
+  <p>Protein</p>
+  <span class="grams-table">20g</span>
+</div>
 ```
+
+<p>Using media queries to fit the content depending on the user's device ensures that the layout is responsive and looks good on all screen sizes. This is crucial for improving user experience on different devices.</p>
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+@media (min-width: 500px) {
+    section{
+        margin: 8px 30px 8px 30px;
+        
+    }
+    body{
+        padding: 50px;
+    }
 }
 ```
 
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+<p>For future development, I plan to focus on enhancing my skills in CSS animations to create more interactive and engaging user interfaces. Additionally, I want to delve deeper into JavaScript to add more dynamic functionalities to my web projects.</p>
+
+<p>Another area for improvement is optimizing the website for better performance by minimizing CSS and JavaScript files, and ensuring images are properly compressed without losing quality.</p>
 
